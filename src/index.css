@@ -5,9 +5,53 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:rgb(189, 197, 204);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+}
+.card {
+  width:400px;
+  background-color:rgb(120, 126, 143);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin:10px;
+}
+
+.card__cover {
+  height: 150px;
+  width: 100%;
+}
+.card__cover > img{
+  height:100%;
+}
+.card__content {
+  /* Take available height */
+  flex: 1;
+}
+.population-stats{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.population-single{
+  width:800px;
+  border:1px solid rgb(139, 182, 218);
+}
+.population-stick{
+  background-color:rgb(78, 78, 78);
+  border-radius: 10px;
+  margin:5px;
+  height:50px;
 }
